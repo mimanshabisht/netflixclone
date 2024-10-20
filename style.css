@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/*Section One*/
+
+.first {
+    background-image: url("./assets/images/Background.jpg");
+    background-size: max(100vw, 1400px);
+    background-position: center center;  /*So that image remains at center*/
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.first .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.79;
+    position: absolute;
+    top: 0;
+}
+
+/*Navbar*/
+
+.nav {
+    display: flex;
+    width: 78vw;
+    margin: auto;
+    padding-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.nav .logo {
+    height: 40px;
+    width: 150px;
+    background-image: url("assets/images/logo.svg");
+    background-size: cover;
+}
+
+.btns button {
+    background-color: rgb(232 9 20);
+    color: white;
+    border: none;
+    width: 75px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    font-family: "Noto Sans", sans-serif;;
+}
+
+.btns select {
+    background-color: rgba(29, 28, 28, 0.692);
+    color: white;
+    border: 0.9px solid rgba(255, 255, 255, 0.623);
+    width: 120px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 550;
+    font-family: "Noto Sans", sans-serif;;
+}
+
+.btns option {
+    background-color: white;
+    color: black;
+}
+
+/* Text */
+
+.text {
+    color: white;
+    position: relative;
+    height: 80%;
+    padding: 30px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+    
+}
+
+.text1 {
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;    
+}
+
+.text2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.text3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text4 input {
+    height: 50px;
+    width: 350px;
+    background-color: rgba(29, 28, 28, 0.692);
+    color: white;
+    border: 1px solid #8b8585;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.text4 button {
+    height: 54px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(232 9 20);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/*seperation line*/
+
+.seperation {
+    height: 3px;
+    width: 98.7vw;
+    background-color: gray;
+    opacity: 0.7;
+}
+
+/*Section 2*/
+
+.secHeading {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    width: 78vw;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.secBtns {
+    width: 78vw;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.secImgs {
+    width: 74vw;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.secImgs img {
+    border-radius: 10px;
+    height: 250px;
+    margin: 15px;
+}
+
+.secImgs a {
+    text-decoration: none;
+    height: 310px;
+}
+
+.num {
+    color: black;
+    position: relative;
+    bottom: 148px;
+    left: -5px;
+    font-size: 6rem;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+}
+
+/*Section three*/
+
+.bigBox {
+    width: 78vw;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallBox {
+    height: 48vh;
+    width: 24%;
+    background-color: rgb(30,24,46);
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    padding-top: 30px;
+    position: relative;
+
+}
+
+.smallBox .big {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    
+    
+}
+
+.smallBox .small {
+    margin-top: 15px;
+    color: #b9b8c0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.img {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    
+    right: 20px;
+    bottom: 20px;  
+}
+
+.img1 {
+    background-image: url("./assets/images/box1-removebg-preview.png");
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url("./assets/images/box2-removebg-preview.png");
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url("./assets/images/box3-removebg-preview.png");
+    background-size: cover;
+}
+
+.img4 {
+    background-image: url("./assets/images/box4-removebg-preview.png");
+    background-size: cover;
+}
+
+/*Section 4*/
+
+.space{
+    width: 78vw;
+    height: 15px;
+}
+
+.qsBox {
+    margin: auto;
+    margin-top: 8px;
+    padding: 20px;
+    width: 78vw;
+    height: 82px;
+    color: white;
+    background-color: rgba(63, 63, 63, 0.8);
+    font-size: 23px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plusIcon {
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.qsBox:hover {
+    background-color: rgba(82, 82, 82, 0.8);
+}
+
+/*Section 5*/
+
+.enterMail {
+    padding: 50px;
+    color: white;
+    width: 78vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterMail label {
+    margin-bottom: 10px;
+}
+
+.enterMail input {
+    height: 50px;
+    width: 42vw;
+    background-color: rgba(29, 28, 28, 0.692);
+    color: white;
+    border: 1px solid #8b8585;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+.enterMail button {
+    height: 54px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(232 9 20);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.sixth {
+    width: 78vw;
+    margin: auto;
+}
+
+.questions {
+    color: #b9b8c0;
+    margin-bottom: 25px;
+}
+
+.bigTextBox {
+   
+    color: #b9b8c0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-right: 200px;
+    margin-bottom: 50px;
+}
+
+.bigTextBox ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.bigTextBox li {
+    padding-bottom: 12px;
+}
+
+.last {
+    color: #b9b8c0;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+
+.first {
+    height: 85vh;
+}
+
+    .first .box {
+        height: 85vh;
+    }
+
+    .nav {
+        width: 90vw;
+    }
+
+    .nav .logo {
+        width: 88px;
+        height: 24px;
+    }
+
+    .btns select {
+        width: 90px;
+    }
+    
+
+    .text1 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 15px;
+        text-align: center;    
+    }
+
+    .text2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .text3 {
+        font-size: 16px;
+    }
+
+
+    .text4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text4 input {
+        width: 300px;
+        margin: auto;
+    }
+
+    .text4 button {
+        width: 170px;
+        height: 45px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .secHeading {
+        font-size: 18px;
+        width: 85vw;
+        padding-top: 40px;
+    }
+
+    .secBtns {
+        width: 85vw;
+        margin: auto;
+    }
+
+    .secBtns select {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+
+    .secImgs {
+        margin: 0;
+        width: 85vw;
+    }
+
+    .secImgs a {
+        height: 165px;
+    }
+
+    .secImgs img {
+        height: 150px;
+        margin: 15px 5px 0px 5px;
+    }
+
+    .num {
+        bottom: 90px;
+        left: -2px;
+        font-size: 4rem;
+    }
+
+    .bigBox {
+        flex-direction: column;
+        width: 85vw;
+        margin: auto;
+    }
+
+    .smallBox {
+        height: 35vh;
+        width: 100%;
+        padding: 15px;
+        padding-top: 20px;
+        margin-top: 15px;
+    }
+
+    .smallBox .big {
+        font-size: 20px;
+    }
+
+    .qsBox {
+        font-size: 18px;
+        width: 85vw;
+        padding: 0px 15px 0px 15px;
+        height: 75px;
+    }
+
+    .plusIcon {
+        font-size: 3rem;
+    }
+}
